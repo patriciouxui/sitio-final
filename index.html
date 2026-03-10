@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Landing Responsive</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#eee;
+}
+
+/* HEADER */
+
+header{
+background:#950619;
+color:white;
+text-align:center;
+padding:30px;
+font-size:26px;
+}
+
+/* MAIN */
+
+.main{
+background:#41c98c;
+padding:40px 20px;
+display:grid;
+gap:25px;
+}
+
+.img{
+background:#cc2fb0;
+height:180px;
+}
+
+.text{
+font-size:14px;
+line-height:1.4;
+}
+
+.cards{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.card{
+background:#f28c00;
+height:80px;
+}
+
+/* FOOTER */
+
+footer{
+background:#3f51b5;
+color:white;
+padding:30px 20px;
+text-align:center;
+}
+
+.icons{
+display:flex;
+justify-content:center;
+gap:10px;
+margin-bottom:15px;
+}
+
+.icon{
+background:black;
+width:25px;
+height:25px;
+}
+
+/* TABLET */
+
+@media (min-width:768px){
+
+.main{
+justify-items:center;
+}
+
+.img{
+width:350px;
+height:250px;
+}
+
+.cards{
+flex-direction:row;
+}
+
+.card{
+width:120px;
+height:100px;
+}
+
+.text{
+max-width:450px;
+text-align:center;
+}
+
+}
+
+/* DESKTOP */
+
+@media (min-width:1100px){
+
+.main{
+grid-template-columns: 1fr 1fr;
+align-items:center;
+}
+
+.img{
+width:100%;
+height:260px;
+}
+
+.right{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.cards{
+justify-content:flex-start;
+}
+
+footer{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:40px;
+text-align:left;
+}
+
+.icons{
+margin:0;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Titulo Página Web 🦄</h1>
+<p>hola esto en internet!!</p>
+</header>
+
+<section class="main">
+
+<div class="img"></div>
+
+<div class="right">
+
+<div class="text">
+Lorem ipsum quisque at ut viverra amet vestibulum adipiscing commodo id neque dictumst purus integer laoreet pellentesque diam turpis felis.
+</div>
+
+<div class="cards">
+<div class="card"></div>
+<div class="card"></div>
+</div>
+
+<div class="text">
+Lorem ipsum quisque at ut viverra amet vestibulum adipiscing commodo id neque dictumst purus integer laoreet pellentesque diam turpis felis.
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="icons">
+<div class="icon"></div>
+<div class="icon"></div>
+<div class="icon"></div>
+</div>
+
+<div>
+Lorem ipsum quisque at ut viverra amet vestibulum adipiscing commodo id neque dictumst purus integer laoreet pellentesque diam turpis felis.
+</div>
+
+</footer>
+
+</body>
+</html>
